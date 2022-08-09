@@ -1,0 +1,44 @@
+body, li, ul, section{
+    margin: 0px;
+    padding: 0px;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.body_site {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(228, 230, 232);
+}
+.corpo {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.title-main {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 40px 0 30px 0;
+}
+.img-main, .img-body {
+    max-width: 70%;
+    margin: 20px auto;
+}
+.corpo p {
+    max-width: 80%;
+    margin: 10px  auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-align: justify;
+    font-weight: 300;
+    line-height: 3rem;
+}

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+
+/* Inicio da barra de navegação */
+#nav_bar{
+    display: flex;
+    height: 100px;
+    box-shadow: 2px 0 5px rgb(0 0 0 / 50%);
+    position: relative;
+    z-index: 5;
+    background-color:white;
+}
+#nav{
+    display: flex;
+    max-width: 940px;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+}
+#nav_bar_dual{
+    max-width: 810px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+#nav_top, #nav_down, #nav_top ul, #nav_down ul{
+    height: 50px;
+}
+#nav_top {
+    margin-right: 2%;
+}
+#nav_logo_jasm {
+    margin-left: 2%;
+}
+#nav_down {
+    max-width: 810px;
+    width: 100%;
+}
+.itens_bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 600;
+}
+li.social_logo {
+    padding: 10px;
+}
+li.pages_nav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    max-width: 25%;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+}
+li.pages_nav:hover {
+    border-bottom: 4px solid royalblue;
+}
+/* Fim da barra de navegação */
+
+/* Barra infeior */
+.button_bar{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(81, 139, 190);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: oblique;
+}
+/* Fim da barra inferior */
+
+/* Responsividade Barra de navegação */
+@media(max-width: 690px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media(max-width: 530px) {
+    #nav_top {
+        display: none;
+    }
+    #nav_down {
+        height: 100px;
+        align-items: center;
+    }
+    #nav_down ul{
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: center;   
+    }
+    li.pages_nav{
+        width: 25%;
+        padding-right: 20%;
+    }
+}
